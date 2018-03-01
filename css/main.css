@@ -2,7 +2,6 @@
 	font-family: 'Material Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
 	src: local('Material Icons'),
 	local('MaterialIcons-Regular'),
 	url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
@@ -1128,41 +1127,25 @@ html, body {
     padding-right: 15px;
     padding-left: 15px;
 }
-
 .col-xs-5ths {
     width: 20%;
     float: left;
 }
-
 @media (min-width: 768px) {
     .col-sm-5ths {
         width: 20%;
         float: left;
     }
 }
-
 @media (min-width: 992px) {
     .col-md-5ths {
         width: 20%;
         float: left;
     }
 }
-
 @media (min-width: 1200px) {
     .col-lg-5ths {
         width: 20%;
         float: left;
     }
-}
-
-
-
-.container {
-	/*border: thin dashed black;*/
-}
-.section {
-	/*border: thin dotted black;*/
-}
-.row {
-	/*border: thin solid black;*/
 }
