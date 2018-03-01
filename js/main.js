@@ -46,6 +46,8 @@ jQuery(document).ready(function(){
 		}
 	});
 	$('.back-to-top').click(function () {
+		$('#myNavbar li').removeClass('active');
+		$('#myNavbar .home-link').addClass('active');
 		$('body, html').animate({
 			scrollTop: 0
 		}, 800);
