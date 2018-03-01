@@ -678,6 +678,16 @@ html, body {
 	display: block;
 	font-style: italic;
 }
+#meet-us .share-social img {
+	width: 25px;
+	margin: 0 5px;
+	filter: invert(100%);
+	transition: 0.3s;
+	z-index: 100;
+}
+#meet-us .share-social img:hover {
+	filter: invert(100%);
+}
 /* MEET US ENDS */
 
 /* PARTNERS STARTS */
@@ -916,10 +926,15 @@ html, body {
 	padding-top: 10px;
 	padding-left: 10px;
 }
-#footer .follow-us-link .material-icons {
-	font-size: 16px;
-	color: gray;
+#footer .follow-us-link img {
+	width: 16px;
 	margin-right: 5px;
+	filter: invert(70%);
+	transition: 0.3s;
+	cursor: pointer;
+}
+#footer .follow-us-link img:hover {
+	filter: invert(0%);
 }
 
 #footer .footer-sb-title {
@@ -1003,6 +1018,12 @@ html, body {
 	color: gray;
 }
 /* COPYRIGHT ENDS */
+
+/* MISC STARTS */
+.spacer {
+	height: 20px;
+}
+/* MISC ENDS */
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
