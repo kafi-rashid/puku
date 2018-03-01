@@ -28,6 +28,30 @@ jQuery(document).ready(function(){
 		$(this).css({ 'top': '50%', 'margin-top': -($(this).height() / 2) });
 	});
 
+	// JUMP TO SECTIONS
+	$('#myNavbar li').not('.home-link').click(function(e) {
+		var jump_to = $(this).find('a').attr('href');
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $(jump_to).offset().top
+	    }, 'slow');
+	});
+
+	// BACK TO TOP
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('.back-to-top').fadeIn();
+		} else {
+			$('.back-to-top').fadeOut();
+		}
+	});
+	$('.back-to-top').click(function () {
+		$('body, html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+
 });
 
 // GOOGLE MAPS
