@@ -600,9 +600,8 @@ html, body {
 #review .review-container {
 	position: relative;
 }
-#reviews {
-	height: 100%;
-	min-height: 150px;
+#review .container {
+	overflow: hidden;
 }
 .review-image {
 	width: 100%;
@@ -614,15 +613,19 @@ html, body {
 #reviews { 
 	vertical-align: top; 
 	width: 100%; 
+	min-width: 100%;
 	max-width: 100%; 
-	overflow: hidden;
+	height: 100%;
+	min-height: 150px;
+	/*overflow: hidden;*/
 }
 #reviews div[id*='txt'] { 
 	position: absolute; 
 	left: 0; 
 	top: 0; 
 	width: 100%; 
-	left: 100%; 
+	left: 100%;
+	padding-bottom: 100%;
 }
 #reviews div[id*='txt'] p { 
 	font-family: 'Montserrat', sans-serif;
@@ -698,7 +701,7 @@ html, body {
 #partners .corporate-logo img {
 	width: 100%;
 	max-width: 60px;
-	opacity: 0.8;
+	opacity: 0.6;
 }
 /* PARTNERS ENDS */
 
@@ -1108,6 +1111,9 @@ html, body {
 	}
 	#our-works .hover-cards .card-image {
 		margin-bottom: 0;
+	}
+	#reviews { 
+		min-height: 200px;
 	}
 }
 /* MEDIA QUERY ENDS */
